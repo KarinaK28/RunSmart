@@ -26,6 +26,7 @@
         align-items: center;
     }
     .slick-dots {
+        padding: 0;
         margin-top: 5px;
         margin-bottom: 0;
         display: flex;
@@ -58,6 +59,14 @@
             width: 400px;
             img {
                 max-width: 400px;
+            }
+        }
+    }
+    @media screen and (max-width: 490px){
+        &__inner {
+            width: 250px;
+            img {
+                max-width: 250px;
             }
         }
     }

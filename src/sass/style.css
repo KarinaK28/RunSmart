@@ -383,6 +383,7 @@
           align-items: center;
 }
 .carousel .slick-dots {
+  padding: 0;
   margin-top: 5px;
   margin-bottom: 0;
   display: -webkit-box;
@@ -423,5 +424,13 @@
   }
   .carousel__inner img {
     max-width: 400px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .carousel__inner {
+    width: 250px;
+  }
+  .carousel__inner img {
+    max-width: 250px;
   }
 }/*# sourceMappingURL=style.css.map */
