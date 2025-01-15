@@ -3,4 +3,14 @@
     font-size: 30px;
     font-weight: 700;
     text-align: center;
+    &_left {
+        color: #fff;
+        font-size: 36px;
+        text-align: left;
+    }
+    @media screen and (max-width: 576px) {
+        &_left {
+        font-size: 18px;
+        }
+    }
 }
