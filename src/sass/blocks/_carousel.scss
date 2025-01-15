@@ -21,6 +21,30 @@
         right: -66px;
         left: auto;
     }
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+    .slick-dots {
+        margin-top: 5px;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: 0;
+        li > button {
+            height: 2px;
+            width: 20px;
+            border-radius: 25%;
+            background-color: grey;
+            border: none;
+            transition: 0.2s all;
+        }
+        button[aria-selected='true'] {
+            background-color: $main-color;
+        }
+    }
     @media screen and (max-width: 768px){
         &__inner {
             width: 550px;
