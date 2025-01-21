@@ -349,6 +349,11 @@
 .feed-form input:nth-child(3) {
   margin-bottom: 20px;
 }
+@media screen and (max-width: 586px) {
+  .feed-form {
+    width: 200px;
+  }
+}
 .feed-form_mt25 {
   margin-top: 25px;
 }
@@ -705,6 +710,22 @@
   font-weight: 300;
   margin-top: 10px;
 }
+@media screen and (max-width: 586px) {
+  .feed__text {
+    margin-left: 21px;
+    padding-right: 20px;
+  }
+  .feed__img {
+    width: 120px;
+    height: 120px;
+  }
+  .feed__item {
+    margin-top: 80px;
+  }
+  .feed__item:nth-child(2) {
+    margin-top: 50px;
+  }
+}
 
 .footer {
   height: 630px;
@@ -785,8 +806,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-55%, -50%);
+          transform: translate(-55%, -50%);
   width: 380px;
   min-height: 400px;
   background-color: #f2f2f2;
@@ -816,6 +837,11 @@
 }
 .modal_mini {
   min-height: 140px;
+}
+@media screen and (max-width: 586px) {
+  .modal {
+    width: 300px;
+  }
 }
 
 #consultation, #order, #thanks {
