@@ -1,3 +1,31 @@
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 * {
   font-family: "MuseoModerno", serif;
 }
@@ -5,6 +33,103 @@
 .container {
   max-width: 950px;
   margin: 0 auto;
+}
+
+.promo {
+  min-height: 650px;
+  padding: 21px 0 93px 0;
+  background: url(../img/main_bg.jpg) center center/cover no-repeat;
+}
+.promo__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 90px;
+}
+.promo__header {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 42px;
+}
+.promo__subheader {
+  margin-top: 17px;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.promo__icons {
+  margin-top: 65px;
+  width: 425px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.promo__icon {
+  width: 108px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.promo__icon img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.promo__link {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 18px;
+}
+.promo__link a {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .promo {
+    padding: 20px 2% 60px 2%;
+  }
+  .promo__header {
+    font-size: 36px;
+  }
+  .promo__subheader {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .promo__wrapper {
+    margin-top: 60px;
+  }
+  .promo__header {
+    font-size: 24px;
+  }
+  .promo__icons {
+    width: 325px;
+  }
+  .promo__icon img {
+    width: 85px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .promo {
+    padding: 10px 1% 40px 1%;
+  }
 }
 
 .header {
@@ -29,7 +154,7 @@
     width: 150px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 586px) {
   .header__logo {
     width: 130px;
   }
@@ -75,113 +200,6 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
-
-.promo {
-  min-height: 650px;
-  padding: 21px 0 93px 0;
-  background: url(../img/main_bg.jpg) center center/cover no-repeat;
-}
-@media screen and (max-width: 768px) {
-  .promo {
-    padding: 20px 2% 60px 2%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .promo {
-    padding: 10px 1% 40px 1%;
-  }
-}
-.promo__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-top: 90px;
-}
-@media screen and (max-width: 576px) {
-  .promo__wrapper {
-    margin-top: 60px;
-  }
-}
-.promo__header {
-  color: #ffffff;
-  font-size: 42px;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 42px;
-}
-@media screen and (max-width: 768px) {
-  .promo__header {
-    font-size: 36px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .promo__header {
-    font-size: 24px;
-  }
-}
-.promo__subheader {
-  margin-top: 17px;
-  color: #ffffff;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-@media screen and (max-width: 768px) {
-  .promo__subheader {
-    font-size: 16px;
-  }
-}
-.promo__icons {
-  margin-top: 65px;
-  width: 425px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-@media screen and (max-width: 576px) {
-  .promo__icons {
-    width: 325px;
-  }
-}
-.promo__icon {
-  width: 108px;
-  text-align: center;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 500;
-}
-.promo__icon img {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-@media screen and (max-width: 576px) {
-  .promo__icon {
-    width: 85px;
-  }
-}
-.promo__link {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  margin-top: 18px;
-}
-.promo__link a {
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: underline;
 }
 
 .button {
@@ -285,6 +303,14 @@
   color: #ff0000;
   text-decoration: underline;
 }
+.advantages__icon_animation {
+  -webkit-animation: heartbeat 1.5s ease infinite;
+          animation: heartbeat 1.5s ease infinite;
+}
+.advantages__icon_animation:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
 
 .title {
   color: #0d0d0d;
@@ -313,6 +339,15 @@
   color: #ffffff;
   font-size: 20px;
   font-weight: 500;
+}
+.consultation .error {
+  border: 1px solid red;
+}
+.consultation label.error {
+  color: #fff;
+  border: none;
+  text-align: center;
+  margin-bottom: 15px;
 }
 @media screen and (max-width: 992px) {
   .consultation {
@@ -417,7 +452,7 @@
   transition: 0.2s all;
 }
 .carousel .slick-dots button[aria-selected=true] {
-  background-color: #C70101;
+  background-color: red;
 }
 @media screen and (max-width: 768px) {
   .carousel__inner {
@@ -838,6 +873,15 @@
 .modal_mini {
   min-height: 140px;
 }
+.modal .error {
+  border: 1px solid red;
+}
+.modal label.error {
+  border: none;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #0d0d0d;
+}
 @media screen and (max-width: 586px) {
   .modal {
     width: 300px;
@@ -846,4 +890,16 @@
 
 #consultation, #order, #thanks {
   display: none;
+}
+
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+}
+.pageup img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

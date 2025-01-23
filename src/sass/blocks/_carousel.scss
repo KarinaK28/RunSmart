@@ -43,7 +43,7 @@
             transition: 0.2s all;
         }
         button[aria-selected='true'] {
-            background-color: $main-color;
+            background-color: red;
         }
     }
     @media screen and (max-width: 768px){
