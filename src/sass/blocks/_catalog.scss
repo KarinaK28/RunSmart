@@ -1,5 +1,6 @@
 .catalog {
     padding-bottom: 50px;
+
     &__tabs {
         margin-top: 70px;
         list-style-type: none;
@@ -10,6 +11,14 @@
         padding-left: 0;
         @media screen and (max-width: 768px) {
             margin-top: 40px;   
+        }
+        @media screen and (max-width: 568px) {
+            align-items:flex-end;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-content: space-around; 
+            justify-content: center; 
+            gap: 10px;
         }
     }
     &__tab {
@@ -60,6 +69,9 @@
         }
         @media screen and (max-width: 768px){
             margin-top: 40px;
+        }
+        @media screen and (max-width: 568px){
+            margin-top: 10px;
         }
     }
     &-item {
