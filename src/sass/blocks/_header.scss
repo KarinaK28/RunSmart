@@ -12,6 +12,9 @@
         }
         @media screen and (max-width: 586px) {
             width: 130px;
+            img {
+            width: 80%;
+        }
         }
     }
     &__official {
@@ -28,6 +31,11 @@
                font-size: 14px; 
             } 
         }
+        @media screen and (max-width: 568px) {
+            & span {
+               font-size: 12px; 
+            } 
+        }
     }
     &__phone {
         display: block;
@@ -39,7 +47,8 @@
             text-decoration: none;
         }
         @media screen and (max-width: 576px) {
-            font-size: 16px;
+            font-size: 14px;
+            font-weight: 500;
         }
     }
     &__contacts {

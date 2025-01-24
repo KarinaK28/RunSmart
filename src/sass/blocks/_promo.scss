@@ -30,16 +30,25 @@
         justify-content: space-between;
     }
     &__icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 108px;
-        text-align: center;
-        color: #ffffff;
-        font-size: 14px;
-        font-weight: 500;
         img {
             display: block;
             margin: 0 auto;
             margin-bottom: 20px;
         }
+    }
+    &__text {
+        text-align: center;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500; 
+        display: flex;
+        justify-content: flex-end; 
+        height: 20px;  
+        margin: 0 auto;
     }
     &__link {
         color: #ffffff;
@@ -67,12 +76,24 @@
         }
         &__header {
             font-size: 24px;
-        }    
+            margin: 0;
+        }  
+        &__subheader {
+            margin: 0;
+        }   
         &__icons {
             width: 325px;   
+            margin-top: 110px;
         }
-        &__icon img {
-            width: 85px;
+        &__icon {
+            width: 100px;  
+
+            img {
+            height: 60px;
+            }
+        }
+        &__text {
+            font-weight: 300;            
         }
     }
     @media screen and (max-width: 375px) {
